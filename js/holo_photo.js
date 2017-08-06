@@ -36,29 +36,21 @@ function rotate(event) {
 }
 
 function handleOrientation(event) {
-	var x = event.beta; // In degree in the range [-180,180]
-	var y = event.gamma; // In degree in the range [-90,90]
-	// Because we don't want to have the device upside down
-	// We constrain the x value to the range [-90,90]
-	if (x > 90) {
-		x = 90
-	};
-	if (x < -90) {
-		x = -90
-	};
-	// To make computation easier we shift the range of 
-	// x and y to [0,180]
-	x += 90;
-	y += 90;
+	var card = document.getElementById("card");
+	var x = event.alpha; // In degree in the range [-180,180]
+	var y = event.beta; // In degree in the range [-90,90]
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 	var midpointX = w / 2;
 	var midpointY = h / 2;
+	var card_x = card.clientLeft;
+	var card_y = card.clientTop;
+	x = (x + card_x + 90)*5;
+	y = (y + 90)*5;
 	var ypos = x - midpointX;
 	var xpos = y - midpointY;
 	var yval = ypos / midpointX * 20;
 	var xval = xpos / midpointY * 20;
-	var card = document.getElementById("card");
 	card.style.transform =
 		"perspective(550px) rotateY(" + yval + "deg) rotateX(" + xval + "deg)";
 
