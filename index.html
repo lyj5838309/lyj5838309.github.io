@@ -9,77 +9,61 @@
 <title>Invitation</title>
 <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 <link rel="stylesheet" type="text/css" href="css/slides.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/test.css" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
 <body style="background: #3a0839">
 <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script> 
+<script type="application/javascript" src="js/test.js"></script>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
 <div class="page">
-  <div class="main-page__content">
-    <h1>Hello World!</h1>
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <h2>Slide 1</h2>
-        <p style="text-align: center">Good day commander!</p>
-        <script type="application/javascript" src="js/test.js"></script>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <br>
-        <div class="text">Caption Text</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <h2>Slide 2</h2>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <div class="text">Caption Two</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <h2>Slide 3</h2>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <p>Good day commander!</p>
-        <div class="text">Caption Three</div>
-      </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
-    <br>
-    <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
-  </div>
+	<div class="main-page">
+		<h1>Hello World!</h1>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<h2>Slide 1</h2>
+			</div>
+			<div class="mySlides fade">
+				<h2>Slide 2</h2>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+			</div>
+			<div class="mySlides fade">
+				<h2>Slide 3</h2>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+				<p>Good day commander!</p>
+			</div>
+			<div> <span class="dot" style="top:45%" onclick="currentSlide(1)"></span> <br>
+				<span class="dot" style="top:50%" onclick="currentSlide(2)"></span> <br>
+				<span class="dot" style="top:55%" onclick="currentSlide(3)"></span> </div>
+		</div>
+	</div>
 </div>
 <script type="application/javascript" src="js/slides.js"></script>
 </body>
