@@ -53,11 +53,10 @@ function handleOrientation(event) {
 	var y = event.beta; // In degree in the range [-90,90]
 	var z = event.alpha;
 	if (y < 90 && y > -90) {
-		x += 90;
 		console.log(x);
 		x = (x * (card_mid_x / 90)) * 10;
 		console.log(x);
-		y = (y + 0) * 10;
+		y = (y + 30) * 10;
 		var w = window.innerWidth;
 		var h = window.innerHeight;
 		var midpointX = w / 2;
