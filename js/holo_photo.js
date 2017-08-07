@@ -51,6 +51,7 @@ function handleOrientation(event) {
 	var card_mid_x = card_x + card_width / 2;
 	var x = event.gamma; // In degree in the range [-90,90]
 	var y = event.beta; // In degree in the range [-90,90]
+	var z = event.alpha;
 	console.log("================");
 	console.log(card_x);
 	console.log(card_width);
@@ -61,6 +62,7 @@ function handleOrientation(event) {
 		x = -90;
 	if (x > 90)
 		x = 90;
+	console.log("---");
 	console.log(x);
 	x += 90;
 	x = (x * (card_mid_x / 180)) * 5;
