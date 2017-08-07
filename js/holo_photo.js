@@ -67,6 +67,7 @@ function handleOrientation(event) {
 	y = (y + 20) * 10;
 	console.log("---");
 	console.log(x);
+	console.log(y);
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 	var midpointX = w / 2;
