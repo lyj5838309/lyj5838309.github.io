@@ -1,3 +1,4 @@
+
 /* CSS Document */
 /* these animations are hard-coded to demonstrate the effect - not prtable in the slightest! */
 @-webkit-keyframes rotate-card-base {
@@ -982,12 +983,15 @@
 }
 #cardWrapper {
 	position: relative;
+    width: calc(40vh * 0.70756062767475);
+	height: 40vh;
+	margin: 20px;
 }
 #card {
 	position: relative;
 	top: inherit;
-	width: calc(40vh * 0.70756062767475);
-	height: 40vh;
+	width: inherit;
+	height: inherit;
 	overflow: hidden;
 }
 #card img {

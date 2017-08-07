@@ -35,18 +35,38 @@ function rotate(event) {
 	}
 }
 
+function getOffset(el) {
+	el = el.getBoundingClientRect();
+	return {
+		left: el.left + window.scrollX,
+		top: el.top + window.scrollY
+	}
+}
+
 function handleOrientation(event) {
-	var card = document.getElementById("card");
+	var card_wrapper = document.getElementById("cardWrapper");
+	var card_offset = getOffset(card_wrapper);
+	var card_x = card_offset.left;
+	var card_width = card_wrapper.offsetWidth;
+	var card_mid_x = card_x + card_width/2;
 	var x = event.alpha; // In degree in the range [-180,180]
 	var y = event.beta; // In degree in the range [-90,90]
+	/*
+	console.log(card_mid_x);
+	console.log(x);
+	console.log(y);
+	*/
+	if (x < -90)
+		x = -90;
+	if (x > 90)
+		x = 90;
+	x += 90;
+	x = (x * (card_mid_x/180)) * 5;
+	y = (y + 20)*10;
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 	var midpointX = w / 2;
 	var midpointY = h / 2;
-	var card_x = card.clientLeft;
-	var card_y = card.clientTop;
-	x = (x + card_x + 90)*5;
-	y = (y + 90)*5;
 	var ypos = x - midpointX;
 	var xpos = y - midpointY;
 	var yval = ypos / midpointX * 20;
@@ -69,7 +89,7 @@ function handleOrientation(event) {
 
 if (isMobile) {
 	window.addEventListener(
-		'deviceorientation', 
+		'deviceorientation',
 		function (event) {
 			handleOrientation(event);
 		},
