@@ -45,7 +45,7 @@ function getOffset(el) {
 
 function handleOrientation(event) {
 	var x = event.gamma;
-	var y = event.beta + 45;
+	var y = event.beta - 30;
 	if ((y < 30 && y > -30) && ( x < 30 && x > -30)) {
 		x = -x;
 		var yval = x;
