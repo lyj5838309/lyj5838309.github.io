@@ -58,33 +58,35 @@ function handleOrientation(event) {
 	console.log(x);
 	console.log(y);
 	console.log(z);
-	x += 90;
-	x = (x * (card_mid_x / 180)) * 5;
-	y = (y + 20) * 10;
-	console.log("---");
-	console.log(x);
-	console.log(y);
-	var w = window.innerWidth;
-	var h = window.innerHeight;
-	var midpointX = w / 2;
-	var midpointY = h / 2;
-	var ypos = x - midpointX;
-	var xpos = y - midpointY;
-	var yval = ypos / midpointX * 20;
-	var xval = xpos / midpointY * 20;
-	card.style.transform =
-		"perspective(550px) rotateY(" + yval + "deg) rotateX(" + xval + "deg)";
+	if (y < 90 && y > -90) {
+		x += 90;
+		x = (x * (card_mid_x / 180)) * 5;
+		y = (y + 20) * 10;
+		console.log("---");
+		console.log(x);
+		console.log(y);
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+		var midpointX = w / 2;
+		var midpointY = h / 2;
+		var ypos = x - midpointX;
+		var xpos = y - midpointY;
+		var yval = ypos / midpointX * 20;
+		var xval = xpos / midpointY * 20;
+		card.style.transform =
+			"perspective(550px) rotateY(" + yval + "deg) rotateX(" + xval + "deg)";
 
-	for (var i = 1; i < images.length; ++i) {
-		var myImg = images[i];
-		myImg.style =
-			"transform: perspective(550px) translateZ(" +
-			myImg.getAttribute("data-depth") / myImg.clientHeight * 5000 +
-			"px); left: " +
-			yval * myImg.getAttribute("data-depth") * -1 / 20 +
-			"%; top: " +
-			xval * myImg.getAttribute("data-depth") / 20 +
-			"%;";
+		for (var i = 1; i < images.length; ++i) {
+			var myImg = images[i];
+			myImg.style =
+				"transform: perspective(550px) translateZ(" +
+				myImg.getAttribute("data-depth") / myImg.clientHeight * 5000 +
+				"px); left: " +
+				yval * myImg.getAttribute("data-depth") * -1 / 20 +
+				"%; top: " +
+				xval * myImg.getAttribute("data-depth") / 20 +
+				"%;";
+		}
 	}
 }
 
