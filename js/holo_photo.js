@@ -55,6 +55,7 @@ function handleOrientation(event) {
 	if (y < 90 && y > -90) {
 		x += 90;
 		console.log(x);
+		console.log(y);
 		x = (x * (card_mid_x / 90)) * 10;
 		console.log(x)；
 		y = (y + 0) * 10;
