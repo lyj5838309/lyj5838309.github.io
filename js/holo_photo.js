@@ -52,10 +52,11 @@ function handleOrientation(event) {
 	var x = event.gamma; // In degree in the range [-90,90]
 	var y = event.beta; // In degree in the range [-90,90]
 	var z = event.alpha;
-	if (y < 90 && y > -90) {
+	if ((y < 90 && y > -90) && ( x < 45 && x > -45)) {
 		x = (-x * (card_mid_x / 90)) * 10;
+		y = (y - 40) * 10;
 		console.log(x);
-		y = (y + 20) * 10;
+		console.log(y);
 		if (y < -500)
 			y = -500;
 		if (y > 1200)
