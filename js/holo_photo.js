@@ -62,11 +62,11 @@ function handleOrientation(event) {
 		x = -90;
 	if (x > 90)
 		x = 90;
-	console.log("---");
-	console.log(x);
 	x += 90;
 	x = (x * (card_mid_x / 180)) * 5;
 	y = (y + 20) * 10;
+	console.log("---");
+	console.log(x);
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 	var midpointX = w / 2;
