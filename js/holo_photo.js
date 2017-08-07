@@ -49,9 +49,9 @@ function handleOrientation(event) {
 	var card_x = card_offset.left;
 	var card_width = card_wrapper.offsetWidth;
 	var card_mid_x = card_x + card_width/2;
-	var x = event.alpha; // In degree in the range [-180,180]
+	var x = event.gamma; // In degree in the range [-180,180]
 	var y = event.beta; // In degree in the range [-90,90]
-	var z = event.gamma;
+	var z = event.alpha;
 	console.log("================");
 	console.log(card_x);
 	console.log(card_width);
