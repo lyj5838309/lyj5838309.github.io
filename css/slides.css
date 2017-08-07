@@ -4,7 +4,7 @@
 }
 /* Slideshow container */
 .slideshow-container {
-	max-width: inherit;
+	width: inherit;
 	position: relative;
 	margin: auto;
 }
