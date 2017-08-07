@@ -58,6 +58,7 @@ function handleOrientation(event) {
 	console.log(x);
 	console.log(y);
 	console.log(z);
+	x = -x;
 	if (x < -90)
 		x = -90;
 	if (x > 90)
