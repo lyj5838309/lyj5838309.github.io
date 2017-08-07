@@ -44,12 +44,12 @@ function getOffset(el) {
 }
 
 function handleOrientation(event) {
-	var x = event.gamma; // In degree in the range [-90,90]
-	var y = event.beta; // In degree in the range [-90,90]
+	var x = event.gamma;
+	var y = event.beta + 45;
 	if ((y < 30 && y > -30) && ( x < 30 && x > -30)) {
 		x = -x;
-		var yval = x; //ypos / midpointX * 20;
-		var xval = y; //xpos / midpointY * 20;
+		var yval = x;
+		var xval = y;
 		card.style.transform =
 			"perspective(550px) rotateY(" + yval + "deg) rotateX(" + xval + "deg)";
 		for (var i = 1; i < images.length; ++i) {
