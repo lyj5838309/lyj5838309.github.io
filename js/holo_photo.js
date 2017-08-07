@@ -54,8 +54,8 @@ function handleOrientation(event) {
 	var z = event.alpha;
 	if (y < 90 && y > -90) {
 		x += 90;
-		x = (x * (card_mid_x / 180)) * 10;
-		y = (y + 20) * 10;
+		x = (x * (card_mid_x / 90)) * 10;
+		y = (y + 15) * 10;
 		var w = window.innerWidth;
 		var h = window.innerHeight;
 		var midpointX = w / 2;
@@ -82,13 +82,15 @@ function handleOrientation(event) {
 }
 
 if (isMobile) {
-	window.addEventListener(
-		'deviceorientation',
-		function (event) {
-			handleOrientation(event);
-		},
-		false
-	);
+	if (window.DeviceOrientationEvent) {
+		window.addEventListener(
+			'deviceorientation',
+			function (event) {
+				handleOrientation(event);
+			},
+			false
+		);
+	}
 } else {
 	document.addEventListener(
 		"mousemove",
