@@ -56,7 +56,7 @@ function handleOrientation(event) {
 		x += 90;
 		console.log(x);
 		x = (x * (card_mid_x / 90)) * 10;
-		console.log(x)；
+		console.log(x);
 		y = (y + 0) * 10;
 		var w = window.innerWidth;
 		var h = window.innerHeight;
