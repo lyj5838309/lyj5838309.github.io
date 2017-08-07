@@ -46,14 +46,8 @@ function getOffset(el) {
 function handleOrientation(event) {
 	var x = event.gamma; // In degree in the range [-90,90]
 	var y = event.beta; // In degree in the range [-90,90]
-	var z = event.alpha;
-	if ((y < 60 && y > -60) && ( x < 60 && x > -60)) {
-		var w = window.innerWidth;
-		var h = window.innerHeight;
-		var midpointX = w / 2;
-		var midpointY = h / 2;
-		var ypos = x - midpointX;
-		var xpos = y - midpointY;
+	if ((y < 30 && y > -30) && ( x < 30 && x > -30)) {
+		x = -x;
 		var yval = x; //ypos / midpointX * 20;
 		var xval = y; //xpos / midpointY * 20;
 		card.style.transform =
