@@ -1,13 +1,5 @@
 /* CSS Document */
 .holo__wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	padding: 5vh 5%;
-}
-.panel {
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -15,15 +7,14 @@
 	user-select: none;
 	pointer-events: none;
 }
-.panel__content-col {
-	flex-basis: 25%;
-}
 .panel__content {
+	flex-basis: 25%;
 	position: absolute;
 	top: 70%;
 	left: 0;
 	z-index: 13;
 	width: 100%;
+	height: 100%;
 }
 .panel__text {
 	display: inline-block;

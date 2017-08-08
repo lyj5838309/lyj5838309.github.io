@@ -5,11 +5,13 @@
 /* Slideshow container */
 .slideshow-container {
 	width: inherit;
+	height: 100%;
 	position: relative;
 	margin: auto;
 }
 .mySlides {
 	display: none;
+	height: 100%;
 }
 /* Next & previous buttons */
 .prev, .next {
