@@ -2,7 +2,8 @@
 .coin_container {
 	position: absolute;
 	margin: 0 auto;
-	top: 80vh;
+	bottom: 2%;
+	left: 30%;
 	width: 200px;
 	height: 190px;
 	-webkit-perspective: 1000px;
@@ -11,6 +12,9 @@
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	z-index: 1;
+	zoom: 0.7;
+    -moz-transform: scale(0.7);
 }
 .block, .coin, .oneup {
 	position: absolute;
