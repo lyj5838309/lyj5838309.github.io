@@ -7,6 +7,7 @@
 <![endif]-->
 <meta charset="utf-8">
 <title>Invitation</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 <link rel="stylesheet" type="text/css" href="css/slides.css" />
 <link rel="stylesheet" type="text/css" href="css/heart.css" />
@@ -20,68 +21,45 @@
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="page">
-	<div class="main-page">
-		<div class="slideshow-container">
-			<div class="mySlides fade">
-				<div class="holo__wrapper">
-					<div class="panel__content"> <img src="svg/zi.svg"/> </div>
-					<div class="holo_img-col"> <img src="img/pic1_0012_13.png" class="holo_img layer_1" /> <img src="img/pic1_0011_12.png" class="holo_img layer_2" /> <img src="img/pic1_0010_11.png" class="holo_img layer_3" /> <img src="img/pic1_0009_10.png" class="holo_img layer_4" /> <img src="img/pic1_0008_9.png" class="holo_img layer_5" /> <img src="img/pic1_0007_8.png" class="holo_img layer_6" /> <img src="img/pic1_0006_7.png" class="holo_img layer_7" /> <img src="img/pic1_0005_6.png" class="holo_img layer_8" /> <img src="img/pic1_0004_5.png" class="holo_img layer_11" /> <img src="img/pic1_0003_4.png" class="holo_img layer_10" /> <img src="img/pic1_0002_3.png" class="holo_img layer_11" /> <img src="img/pic1_0001_2.png" class="holo_img layer_12" /> </div>
-				</div>
-			</div>
-			<div class="mySlides fade">
-				<h2>Slide 2</h2>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<div class="heartbeat"></div>
-			</div>
-			<div class="mySlides fade">
-				<h2>Slide 3</h2>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-				<p>Good day commander!</p>
-			</div>
-			<div> <span class="dot" style="top:45%" onclick="currentSlide(1)"></span> <br>
-				<span class="dot" style="top:50%" onclick="currentSlide(2)"></span> <br>
-				<span class="dot" style="top:55%" onclick="currentSlide(3)"></span> </div>
-		</div>
-		<div class="wrapper">
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div class="box"></div>
+	<div class="slide_container">
+		<div class="slider">
+			<ul>
+				<li>
+				<h1>Slide 1</h1>
+					<div class="holo__wrapper">
+						<div class="panel__content"> <img src="svg/zi.svg"/> </div>
+						<div class="holo_img-col"> <img src="img/pic1_0012_13.png" class="holo_img layer_1" /> <img src="img/pic1_0011_12.png" class="holo_img layer_2" /> <img src="img/pic1_0010_11.png" class="holo_img layer_3" /> <img src="img/pic1_0009_10.png" class="holo_img layer_4" /> <img src="img/pic1_0008_9.png" class="holo_img layer_5" /> <img src="img/pic1_0007_8.png" class="holo_img layer_6" /> <img src="img/pic1_0006_7.png" class="holo_img layer_7" /> <img src="img/pic1_0005_6.png" class="holo_img layer_8" /> <img src="img/pic1_0004_5.png" class="holo_img layer_11" /> <img src="img/pic1_0003_4.png" class="holo_img layer_10" /> <img src="img/pic1_0002_3.png" class="holo_img layer_11" /> <img src="img/pic1_0001_2.png" class="holo_img layer_12" /> </div>
+					</div>
+				</li>
+				<li><h1>Slide 2</h1></li>
+				<li><h1>Slide 3</h1></li>
+				<li><h1>Slide 4</h1></li>
+				<li><h1>Slide 5</h1></li>
+			</ul>
+			<ol>
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
 		</div>
 	</div>
+	<!--div class="jump_wrapper">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div-->
 </div>
 <script type="application/javascript" src="js/slides.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 <script type="application/javascript" src="js/holo_photo.js"></script>
 </body>
 </html>

@@ -1,77 +1,68 @@
-/* CSS Document */
-* {
-	box-sizing: border-box
+ul, ol {
+	list-style: none
 }
-/* Slideshow container */
-.slideshow-container {
-	width: inherit;
-	height: 100%;
+.slide_container {
+	max-width: 100%;
+	height: 100vh;
 	position: relative;
-	margin: auto;
 }
-.mySlides {
-	display: none;
-	height: 100%;
-}
-/* Next & previous buttons */
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
+.slider {
+	width: 700px;
+	max-width: 95vw;
+	height: inherit;
+	position: relative;
 	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
+	left: 0;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	overflow: hidden;
+	position: relative;
+	border-radius: 15px;
 }
-/* Position the "next button" to the right */
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+.slider ul, .slider ul li {
+	width: 100%;
+	height: 100%;
+	z-index: -1
 }
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-/* The dots/bullets/indicators */
-.dot {
-	right: 2rem;
+.slider ul {
 	position: absolute;
-	cursor: pointer;
-	height: 13px;
-	width: 13px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+	top: 0;
+	left: 0
 }
-.active, .dot:hover {
-	background-color: #717171;
+.slider ul li:first-of-type {
+	background: rgba(255,255,255,0.2)
 }
-/* Fading animation */
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 2s;
-	animation-name: fade;
-	animation-duration: 2s;
+.slider ul li:nth-of-type(2) {
+	background: rgba(255,255,255,0.2)
 }
- @-webkit-keyframes fade {
- from {
-opacity: .4
+.slider ul li:nth-of-type(3) {
+	background: rgba(255,255,255,0.2)
 }
- to {
-opacity: 1
+.slider ul li:nth-of-type(4) {
+	background: rgba(255,255,255,0.2)
 }
+.slider ul li:last-of-type {
+	background: rgba(255,255,255,0.2)
 }
- @keyframes fade {
- from {
-opacity: .4
+.slider ol {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	padding-right: 15px;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 }
- to {
-opacity: 1
+.slider ol li {
+	width: 7px;
+	height: 30px;
+	margin-bottom: 5px;
+	background: rgba(255, 255, 255,.3);
+	cursor: pointer
 }
+.slider ol li:hover, .slider ol li.active {
+	background: #eee;
 }

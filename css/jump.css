@@ -2,14 +2,14 @@
 * {
 	box-sizing: border-box;
 }
-.wrapper {
+.jump_wrapper {
 	position: absolute;
-	top: 100%;
+	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: center;
-	width: 100%;
+	width: 90%;
 	max-width: 500px;
 	height: 200px;
 }
