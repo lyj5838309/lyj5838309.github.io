@@ -2,19 +2,18 @@
 .coin_container {
 	position: absolute;
 	margin: 0 auto;
-	bottom: 2%;
+	top: 83%;
 	left: 30%;
 	width: 200px;
 	height: 190px;
+	zoom: 0.7;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
+	-moz-transform: scale(0.7);
 	perspective: 1000px;
 	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	z-index: 1;
-	zoom: 0.7;
-    -moz-transform: scale(0.7);
 }
 .block, .coin, .oneup {
 	position: absolute;
@@ -297,7 +296,7 @@
  0% {
  bottom: 5px;
 }
- 25%,  75% {
+ 25%, 75% {
  bottom: 15px;
 }
  50% {
@@ -311,7 +310,7 @@
  0% {
  bottom: 5px;
 }
- 25%,  75% {
+ 25%, 75% {
  bottom: 15px;
 }
  50% {
@@ -325,7 +324,7 @@
  0% {
  bottom: 5px;
 }
- 25%,  75% {
+ 25%, 75% {
  bottom: 15px;
 }
  50% {
