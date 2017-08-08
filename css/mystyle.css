@@ -4,8 +4,9 @@ h1, h2 {
 	text-align: center;
 	color: beige;
 }
-body {
-	max-width: 100%;
+html, body {
+	width: 100%;
+	height: 100% - 20px;
 }
 p {
 	font-family: 微软雅黑;
@@ -20,7 +21,7 @@ p {
 }
 .bg {
 	animation: slide 3s ease-in-out infinite alternate;
-	background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+	background-image: linear-gradient(-45deg, rgb(240,6,166) 50%, rgb(255,255,0) 50%);
 	bottom: 0;
 	left: -50%;
 	opacity: .5;
