@@ -21,26 +21,34 @@
 <div class="bg bg3"></div>
 <div class="page">
 	<div class="main-page">
-		<h1>Hello World!</h1>
 		<div class="slideshow-container">
 			<div class="mySlides fade">
-				<h2>Slide 1</h2>
-				<div id="cardWrapper">
-					<div id="card"> 
-					    <img src="img/pic1_0012_13.png" data-depth="26" /> 
-						<img class="layer1" src="img/pic1_0011_12.png" data-depth="24" /> 
-						<img class="layer2" src="img/pic1_0010_11.png" data-depth="22" /> 
-						<img class="layer3" src="img/pic1_0009_10.png" data-depth="20" /> 
-						<img class="layer4" src="img/pic1_0008_9.png" data-depth="18" /> 
-						<img class="layer5" src="img/pic1_0007_8.png" data-depth="16" /> 
-						<img class="layer6" src="img/pic1_0006_7.png" data-depth="14" /> 
-						<img class="layer7" src="img/pic1_0005_6.png" data-depth="12" />
-						<img class="layer8" src="img/pic1_0004_5.png" data-depth="10" />
-						<img class="layer9" src="img/pic1_0003_4.png" data-depth="8" />
-						<img class="layer10" src="img/pic1_0002_3.png" data-depth="6" />
-						<img class="layer11" src="img/pic1_0001_2.png" data-depth="4" />
-						<img class="layer12" src="img/pic1_0000_1.png" data-depth="2" />
-						<div id="border">&nbsp;</div>
+				<div class="holo__wrapper">
+					<div class="panel">
+						<div class="panel__content-col">
+							<div class="panel__content">
+								<div class="panel__text">
+									<h1 class="panel__title">刘雅静 & 戴望州</h1>
+									<p class="panel__time">2017-10-05 丁酉年八月十六</p>
+								</div>
+								<div class="panel__line"></div>
+								<p class="panel__addr">湘潭市华银国际大酒店</p>
+							</div>
+						</div>
+						<div class="holo_img-col"> 
+						<img src="img/pic1_0012_13.png" class="holo_img layer_1" />
+						<img src="img/pic1_0011_12.png" class="holo_img layer_2" />
+						<img src="img/pic1_0010_11.png" class="holo_img layer_3" />
+						<img src="img/pic1_0009_10.png" class="holo_img layer_4" />
+						<img src="img/pic1_0008_9.png" class="holo_img layer_5" />
+						<img src="img/pic1_0007_8.png" class="holo_img layer_6" />
+						<img src="img/pic1_0006_7.png" class="holo_img layer_7" />
+						<img src="img/pic1_0005_6.png" class="holo_img layer_8" />
+						<img src="img/pic1_0004_5.png" class="holo_img layer_11" />
+						<img src="img/pic1_0003_4.png" class="holo_img layer_10" />
+						<img src="img/pic1_0002_3.png" class="holo_img layer_11" />
+						<img src="img/pic1_0001_2.png" class="holo_img layer_12" />
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -77,11 +85,9 @@
 				<p>Good day commander!</p>
 				<p>Good day commander!</p>
 			</div>
-			<div> 
-				<span class="dot" style="top:45%" onclick="currentSlide(1)"></span> <br>
+			<div> <span class="dot" style="top:45%" onclick="currentSlide(1)"></span> <br>
 				<span class="dot" style="top:50%" onclick="currentSlide(2)"></span> <br>
-				<span class="dot" style="top:55%" onclick="currentSlide(3)"></span> 
-			</div>
+				<span class="dot" style="top:55%" onclick="currentSlide(3)"></span> </div>
 		</div>
 		<div class="wrapper">
 			<div class="box"></div>
@@ -98,6 +104,8 @@
 	</div>
 </div>
 <script type="application/javascript" src="js/slides.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="application/javascript" src="js/holo_photo.js"></script>
 </body>
 </html>
