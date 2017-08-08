@@ -12,7 +12,7 @@
 	flex-basis: 25%;
 	position: absolute;
 	top: 30%;
-	left: 0;
+	left: 50%;
 	z-index: 13;
 	width: 80%;
 }
@@ -24,6 +24,8 @@
 	position: relative;
 	flex-basis: 80%;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .holo_img {
 	display: block;
