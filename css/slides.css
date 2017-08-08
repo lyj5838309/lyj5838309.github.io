@@ -56,7 +56,7 @@ ul, ol {
 	-o-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
-.slider ol li {
+.slider ol li{
 	width: 7px;
 	height: 30px;
 	margin-bottom: 5px;

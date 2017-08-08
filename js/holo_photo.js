@@ -132,7 +132,7 @@ function initTilt() {
 		});
 		$body.mousemove(function (e) {
 			var sxPos = e.pageX / $panel.width() * 100 - 100;
-			var syPos = e.pageY / $panel.height() * 100 - 100;
+			var syPos = e.pageY / $panel.height() * 200 - 100;
 			holo_tilt(sxPos, syPos);
 
 		});
