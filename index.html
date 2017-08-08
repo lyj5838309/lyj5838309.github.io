@@ -8,6 +8,8 @@
 <meta charset="utf-8">
 <title>Invitation</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script type="application/javascript" src="js/swiper.jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 <link rel="stylesheet" type="text/css" href="css/slides.css" />
 <link rel="stylesheet" type="text/css" href="css/heart.css" />
@@ -16,47 +18,34 @@
 <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
-<body style="background: #3a0839">
+<body>
 <div class="bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
-<div class="page">
-	<div class="slide_container swiper-container">
-		<div class="slider">
-			<ul id="slider_id">
-				<li>
-					<div class="holo__wrapper">
-						<div class="holo_img-col">
-							<div class="panel__content"> <img src="svg/zi.svg"/> </div>
-							<img src="img/pic1_0012_13.png" class="holo_img layer_1" /> <img src="img/pic1_0011_12.png" class="holo_img layer_2" /> <img src="img/pic1_0010_11.png" class="holo_img layer_3" /> <img src="img/pic1_0009_10.png" class="holo_img layer_4" /> <img src="img/pic1_0008_9.png" class="holo_img layer_5" /> <img src="img/pic1_0007_8.png" class="holo_img layer_6" /> <img src="img/pic1_0006_7.png" class="holo_img layer_7" /> <img src="img/pic1_0005_6.png" class="holo_img layer_8" /> <img src="img/pic1_0004_5.png" class="holo_img layer_11" /> <img src="img/pic1_0003_4.png" class="holo_img layer_10" /> <img src="img/pic1_0002_3.png" class="holo_img layer_11" /> <img src="img/pic1_0001_2.png" class="holo_img layer_12" /> </div>
-					</div>
-				</li>
-				<li>
-					<h1>Slide 2</h1>
-				</li>
-				<li>
-					<h1>Slide 3</h1>
-				</li>
-				<li>
-					<h1>Slide 4</h1>
-				</li>
-				<li>
-					<h1>Slide 5</h1>
-				</li>
-			</ul>
-			<ol id="slider_button_id">
-				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ol>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" id="slide_1">
+			<div class="holo__wrapper">
+				<div class="holo_img-col">
+					<div class="panel__content" id="holo_panel"> <img src="svg/zi.svg"/> </div>
+					<img src="img/pic1_0012_13.png" class="holo_img layer_1" /> <img src="img/pic1_0011_12.png" class="holo_img layer_2" /> <img src="img/pic1_0010_11.png" class="holo_img layer_3" /> <img src="img/pic1_0009_10.png" class="holo_img layer_4" /> <img src="img/pic1_0008_9.png" class="holo_img layer_5" /> <img src="img/pic1_0007_8.png" class="holo_img layer_6" /> <img src="img/pic1_0006_7.png" class="holo_img layer_7" /> <img src="img/pic1_0005_6.png" class="holo_img layer_8" /> <img src="img/pic1_0004_5.png" class="holo_img layer_11" /> <img src="img/pic1_0003_4.png" class="holo_img layer_10" /> <img src="img/pic1_0002_3.png" class="holo_img layer_11" /> <img src="img/pic1_0001_2.png" class="holo_img layer_12" /> </div>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<h1>Slide 2</h1>
+		</div>
+		<div class="swiper-slide">
+			<h1>Slide 3</h1>
+		</div>
+		<div class="swiper-slide">
+			<h1>Slide 4</h1>
+		</div>
+		<div class="swiper-slide">
+			<h1>Slide 5</h1>
 		</div>
 	</div>
-</div> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.min.js"></script>
-<script type="application/javascript" src="js/slides.js"></script>
-<script type="application/javascript" src="js/holo_photo.js"></script>
+</div>
+<script type="application/javascript" src="js/slides.js"></script> 
+<script type="application/javascript" src="js/holo_photo.js"></script> 
 </body>
 </html>

@@ -20,8 +20,6 @@ var $body = $("body"),
 	$layer11 = $(".layer_11"),
 	$layer12 = $(".layer_12");
 
-
-
 function handleOrientation(event) {
 	TweenMax.set([$pContent, $layer1], {
 		transformStyle: "preserve-3d"

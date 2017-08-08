@@ -1,68 +1,28 @@
-ul, ol {
-	list-style: none
-}
-.slide_container {
+.swiper-container {
 	max-width: 100%;
 	height: 100vh;
 	position: relative;
 }
-.slider {
+.swiper-slide {
 	width: 700px;
-	max-width: 95vw;
+	max-width: 98vw;
 	height: inherit;
 	position: relative;
 	top: 50%;
 	left: 0;
-	-webkit-transform: translate(0, -50%);
-	-moz-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%);
-	transform: translate(0, -50%);
 	overflow: hidden;
-	position: relative;
 	border-radius: 15px;
-}
-.slider ul, .slider ul li {
-	width: 100%;
-	height: 100%;
-	z-index: -1
-}
-.slider ul {
-	position: absolute;
-	top: 0;
-	left: 0
-}
-.slider ul li:first-of-type {
-	background: rgba(255,255,255,0.2)
-}
-.slider ul li:nth-of-type(2) {
-	background: rgba(255,255,255,0.2)
-}
-.slider ul li:nth-of-type(3) {
-	background: rgba(255,255,255,0.2)
-}
-.slider ul li:nth-of-type(4) {
-	background: rgba(255,255,255,0.2)
-}
-.slider ul li:last-of-type {
-	background: rgba(255,255,255,0.2)
-}
-.slider ol {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	padding-right: 15px;
-	-webkit-transform: translate(0, -50%);
-	-moz-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%);
-	transform: translate(0, -50%);
-}
-.slider ol li{
-	width: 7px;
-	height: 30px;
-	margin-bottom: 5px;
-	background: rgba(255, 255, 255,.3);
-	cursor: pointer
-}
-.slider ol li:hover, .slider ol li.active {
-	background: #eee;
+    background: rgba(255,255,255,0.2);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 }

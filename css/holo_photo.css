@@ -1,6 +1,6 @@
 /* CSS Document */
 .holo__wrapper {
-	top: 20%;
+	top: 10%;
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -21,8 +21,8 @@
 	text-align: right;
 }
 .holo_img-col {
-	position: absolute
-	flex-basis: 70%;
+	position: relative;
+	flex-basis: 80%;
 	width: 100%;
 }
 .holo_img {
