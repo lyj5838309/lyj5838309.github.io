@@ -582,8 +582,8 @@ document.body.onload = function () {
 		});
 	}
 
-	var svg = document.getElementById('svg');
+	var svg_thanks = document.getElementById('svg_thanks');
 	if (window.innerWidth < 600) {
-		svg.style.width = window.innerWidth + 'px';
+		svg_thanks.style.width = window.innerWidth + 'px';
 	}
 }

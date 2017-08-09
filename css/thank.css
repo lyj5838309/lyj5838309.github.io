@@ -1,20 +1,20 @@
-svg {
+.thanks {
 	width: 100vw;
 	margin: 0 auto;
 	position: relative;
 	display: block;
 	z-index: 0;
 }
-svg text {
+.thanks text {
 	fill: #fff;
 	font-weight: 700;
 }
-svg text tspan {
+.thanks text tspan {
 	padding: 0;
 	margin: 0;
 	opacity: 0;
 }
-svg line, svg polyline, svg ellipse, svg path {
+.thanks line, .thanks polyline, .thanks ellipse, .thanks path {
 	stroke: #fff;
 	fill: none;
 	stroke-linecap: round;
@@ -23,27 +23,27 @@ svg line, svg polyline, svg ellipse, svg path {
 	opacity: 0;
 	stroke-miterlimit: 10;
 }
-svg .dec {
+.thanks .dec {
 	stroke-width: 3;
 }
-svg .underline {
+.thanks .underline {
 	stroke-width: 6;
 	stroke-linecap: butt;
 	opacity: 1;
 }
-svg .dot {
+.thanks .dot {
 	opacity: 1;
 }
-svg .purple {
+.thanks .purple {
 	stroke: #B191FF;
 }
-svg .lime {
+.thanks .lime {
 	stroke: #DCE2AA;
 }
-svg .plum {
+.thanks .plum {
 	stroke: #843B62;
 }
-svg .blue {
+.thanks .blue {
 	stroke: #241E4E;
 }
 #play {
