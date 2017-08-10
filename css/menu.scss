@@ -33,10 +33,11 @@ button, input {
   }
   
   &__text {
-    width: 9rem;
+    width: 65%;
+	font-size: 1.3rem;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     margin-left: -5rem;
     transform: translate3d(0,-50%,0);
     color: #fff;
