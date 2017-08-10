@@ -11,7 +11,7 @@ $(document).ready(function () {
 		$chat = $(".chat"),
 		menuTop = $sideMenu.offset().top,
 		menuLeft = $sideMenu.offset().left,
-		menuWidth = 200,
+		menuWidth = convertRemToPixels(13.5),
 		diffX = 0,
 		curX = 0,
 		finalX = 0,
