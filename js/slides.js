@@ -7,5 +7,8 @@ $(document).ready(function () {
 		spaceBetween: 20,
 		mousewheelControl: false,
 		threshold: $(document).height * 0.15,
+		shortSwipes: false,
+		longSwipesMs: 0.1,
+		longSwipesRatio: 0.25
 	})
 });

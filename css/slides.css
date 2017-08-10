@@ -5,7 +5,7 @@
 }
 .swiper-slide {
 	width: 700px;
-	max-width: 98vw;
+	max-width: 100vw;
 	height: inherit;
 	position: relative;
 	top: 50%;

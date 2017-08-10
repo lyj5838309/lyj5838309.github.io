@@ -5,6 +5,7 @@ function convertRemToPixels(rem) {
 
 $(document).ready(function () {
 	var $svg = $(".sidebar"),
+		$canvas = $(".static"),
 		$sideMenu = $(".slide-menu"),
 		$path = $(".s-path"),
 		$sCont = $(".sidebar-content"),
@@ -12,6 +13,7 @@ $(document).ready(function () {
 		menuTop = $sideMenu.offset().top,
 		menuLeft = $sideMenu.offset().left,
 		menuWidth = convertRemToPixels(13.5),
+		windowWidth = $canvas.width(),
 		diffX = 0,
 		curX = 0,
 		finalX = 0,
@@ -40,9 +42,9 @@ $(document).ready(function () {
 		midD = createD(125, 75, 0),
 		//finalD = createD(200, 0, 1),
 		finalD = createD(menuWidth, 0, 1),
-		clickMidD = createD(300, 80, 0),
-		clickMidDRev = createD(200, 100, 1),
-		clickD = createD(300, 0, 1),
+		clickMidD = createD(windowWidth, 80, 0),
+		clickMidDRev = createD(windowWidth - 100, 100, 1),
+		clickD = createD(windowWidth, 0, 1),
 		currentPath = startD;
 
 	function newD(num1, num2) {
@@ -148,7 +150,7 @@ $(document).ready(function () {
 	}
 
 	function moveImage(that) {
-		var $img = $(that).find(".sidebar-item__logo"),
+		var $img = $(that).find(".item__logo"),
 			top = $img.offset().top - menuTop,
 			left = $img.offset().left - menuLeft,
 			$clone = $img.clone().addClass("cloned");
@@ -183,11 +185,9 @@ $(document).ready(function () {
 		animating = true;
 		$(document).off("click", closeSidebar);
 		var that = this,
-			name = $(this).find(".contact__name").text(),
-			online = $(this).find(".contact__status").hasClass("online");
+			name = $(this).find(".item__name").text();
 		$(".chat__name").text(name);
 		$(".chat__online").removeClass("active");
-		if (online) {$(".chat__online").addClass("active");}
 		ripple($(that), e);
 		setTimeout(function () {
 			$sCont.removeClass("active");
