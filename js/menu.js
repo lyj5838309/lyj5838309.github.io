@@ -1,12 +1,17 @@
 // JavaScript Document
+function convertRemToPixels(rem) {    
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
 $(document).ready(function () {
 	var $svg = $(".sidebar"),
 		$sideMenu = $(".slide-menu"),
 		$path = $(".s-path"),
 		$sCont = $(".sidebar-content"),
 		$chat = $(".chat"),
-		demoTop = $sideMenu.offset().top,
-		demoLeft = $sideMenu.offset().left,
+		menuTop = $sideMenu.offset().top,
+		menuLeft = $sideMenu.offset().left,
+		menuWidth = 200,
 		diffX = 0,
 		curX = 0,
 		finalX = 0,
@@ -33,7 +38,8 @@ $(document).ready(function () {
 
 	var startD = createD(50, 0, 1),
 		midD = createD(125, 75, 0),
-		finalD = createD(200, 0, 1),
+		//finalD = createD(200, 0, 1),
+		finalD = createD(menuWidth, 0, 1),
 		clickMidD = createD(300, 80, 0),
 		clickMidDRev = createD(200, 100, 1),
 		clickD = createD(300, 0, 1),
@@ -142,9 +148,9 @@ $(document).ready(function () {
 	}
 
 	function moveImage(that) {
-		var $img = $(that).find(".contact__photo"),
-			top = $img.offset().top - demoTop,
-			left = $img.offset().left - demoLeft,
+		var $img = $(that).find(".sidebar-item__logo"),
+			top = $img.offset().top - menuTop,
+			left = $img.offset().left - menuLeft,
 			$clone = $img.clone().addClass("cloned");
 
 		$clone.css({
@@ -155,7 +161,7 @@ $(document).ready(function () {
 		$clone.css("top");
 		$clone.css({
 			top: "1.8rem",
-			left: "25rem"
+			right: "2rem"
 		});
 	}
 
@@ -172,7 +178,7 @@ $(document).ready(function () {
 		elem.append($ripple);
 	}
 
-	$(document).on("click", ".contact", function (e) {
+	$(document).on("click", ".sidebar-item", function (e) {
 		if (animating) return;
 		animating = true;
 		$(document).off("click", closeSidebar);
@@ -225,8 +231,8 @@ $(document).ready(function () {
 	});
 
 	$(window).on("resize", function () {
-		demoTop = $sideMenu.offset().top;
-		demoLeft = $sideMenu.offset().left;
+		menuTop = $sideMenu.offset().top;
+		menuLeft = $sideMenu.offset().left;
 	});
 
 });

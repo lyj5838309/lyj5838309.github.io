@@ -4,7 +4,8 @@ $(document).ready(function () {
 	var mySwiper = new Swiper('.swiper-container', {
 		// Optional parameters
 		direction: 'vertical',
-		spaceBetween: 30,
-		mousewheelControl: false
+		spaceBetween: 20,
+		mousewheelControl: false,
+		threshold: $(document).height * 0.15,
 	})
 });
