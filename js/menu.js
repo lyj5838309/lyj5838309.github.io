@@ -101,7 +101,7 @@ $(document).ready(function () {
 				var x = e.pageX || e.originalEvent.touches[0].pageX;
 				diffX = x - startX;
 				if (diffX < 0) diffX = 0;
-				if (diffX > 300) diffX = 300;
+				if (diffX > 100) diffX = 100;
 				curX = Math.floor(diffX / 2);
 				$path.attr("d", newD(curX));
 			});

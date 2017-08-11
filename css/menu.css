@@ -163,7 +163,7 @@ button, input {
     color: rebeccapurple; }
   .detail__content {
     position: absolute;
-    top: 7.5rem;
+    top: 7.0rem;
     left: auto;
     width: 90%;
     height: 100%;
@@ -172,7 +172,7 @@ button, input {
     margin: 0 auto; }
     .detail__content .map-content {
       width: 100%;
-      height: 80%; }
+      height: 75%; }
   .detail__input {
     position: absolute;
     bottom: 0;

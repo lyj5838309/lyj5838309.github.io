@@ -17,6 +17,10 @@
 <link rel="stylesheet" type="text/css" href="css/menu.css" />
 <link rel="stylesheet" type="text/css" href="css/thank.css" />
 <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=8c98b7401adc25b043a576905df98a75"></script>
+<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
 <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
@@ -84,13 +88,29 @@
 				<div class="detail"> <span class="detail__back"></span>
 					<div class="detail__title"> <span class="detail__name">Dummy</span> </div>
 					<div class="detail__content" id="detail_map">
-						<iframe src="map.html" class="map-content" frameborder="0" scrolling="no">
-							<p>您的浏览器不支持iframe，请更换更高版本的浏览器.</p>
-						</iframe>
+						<div class="map-content" id="map_container"></div>
+						<script>
+							var map = new AMap.Map('map_container', {
+									mapStyle: "amap://styles/fresh",
+									zoom: 13,
+									center: [112.928731, 27.880516]
+								});
+							AMap.plugin(['AMap.ToolBar','AMap.Scale', 'AMap.Geolocation'], function(){
+        						map.addControl(new AMap.ToolBar());
+        						map.addControl(new AMap.Scale());
+								map.addControl(new AMap.Geolocation());
+							});
+							var marker1 = new AMap.Marker({
+								position: [112.927031,27.870021],
+								offset: new AMap.Pixel(-9,-30),
+								map: map,
+								title: "酒店地址"
+							});
+					</script> 
 					</div>
 					<div class="detail__content" id="detail_schedule"> </div>
 					<div class="detail__content" id="detail_register"> </div>
-					<!--input type="text" class="detail__input" placeholder="Your message" /-->
+					<!--input type="text" class="detail__input" placeholder="Your message" /--> 
 				</div>
 			</div>
 		</div>
