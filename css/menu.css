@@ -103,7 +103,7 @@ button, input {
     transition: opacity 0.2s 0;
     opacity: 0; }
 
-.chat {
+.detail {
   display: none;
   z-index: 5;
   position: absolute;
@@ -114,11 +114,11 @@ button, input {
   padding: 2.5rem 0 5.5rem 2.5rem;
   transition: opacity 200ms;
   opacity: 0; }
-  .chat.active {
+  .detail.active {
     opacity: 1; }
-    .chat.active:before {
+    .detail.active:before {
       width: 100%; }
-  .chat:before {
+  .detail:before {
     content: "";
     position: absolute;
     top: 0;
@@ -128,7 +128,7 @@ button, input {
     background: #1CC6AE;
     width: 0;
     transition: width 0.2s; }
-  .chat__back {
+  .detail__back {
     position: relative;
     display: inline-block;
     width: 2rem;
@@ -136,9 +136,9 @@ button, input {
     margin-top: 0.5rem;
     margin-left: -0.6rem;
     cursor: pointer; }
-    .chat__back:hover:before {
+    .detail__back:hover:before {
       transform: translateX(-0.3rem) rotate(-45deg); }
-    .chat__back:before {
+    .detail__back:before {
       content: "";
       position: absolute;
       display: block;
@@ -151,15 +151,7 @@ button, input {
       border-bottom: none;
       transform: rotate(-45deg);
       transition: transform 0.3s; }
-  .chat__status {
-    position: absolute;
-    top: 2rem;
-    right: 6.5rem;
-    font-size: 1.2rem;
-    font-family: Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    color: #B1A9A9; }
-  .chat__person {
+  .detail__title {
     display: inline-block;
     position: absolute;
     top: 3rem;
@@ -167,20 +159,7 @@ button, input {
     font-size: 2rem;
     font-family: Helvetica, Arial, sans-serif;
     color: #36343D; }
-  .chat__online {
-    position: absolute;
-    top: 50%;
-    left: -1.5rem;
-    margin-top: -3px;
-    width: 8px;
-    height: 8px;
-    border: 2px solid #00B570;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.3s; }
-    .chat__online.active {
-      opacity: 1; }
-  .chat__messages {
+  .detail__content {
     position: absolute;
     top: 7.5rem;
     left: 2.5rem;
@@ -188,26 +167,7 @@ button, input {
     height: 37rem;
     padding-right: 2.5rem;
     overflow-y: auto; }
-  .chat__msgRow {
-    margin-bottom: 0.5rem; }
-    .chat__msgRow:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .chat__message {
-    display: inline-block;
-    max-width: 60%;
-    padding: 1rem;
-    font-size: 1.4rem;
-    font-family: Helvetica, Arial, sans-serif; }
-    .chat__message.mine {
-      color: #2B2342;
-      border: 1px solid #DFDFDF; }
-    .chat__message.notMine {
-      float: right;
-      color: #23244E;
-      background: #E9EAF3; }
-  .chat__input {
+  .detail__input {
     position: absolute;
     bottom: 0;
     left: 0;

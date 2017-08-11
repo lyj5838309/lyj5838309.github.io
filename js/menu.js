@@ -9,7 +9,7 @@ $(document).ready(function () {
 		$sideMenu = $(".slide-menu"),
 		$path = $(".s-path"),
 		$sCont = $(".sidebar-content"),
-		$chat = $(".chat"),
+		$detail = $(".detail"),
 		menuTop = $sideMenu.offset().top,
 		menuLeft = $sideMenu.offset().left,
 		menuWidth = convertRemToPixels(13.5),
@@ -129,16 +129,16 @@ $(document).ready(function () {
 
 	function closeSidebar(e) {
 		if ($(e.target).closest(".sidebar-content").length ||
-			$(e.target).closest(".chat").length) return;
+			$(e.target).closest(".detail").length) return;
 		if (animating) return;
 		animating = true;
 		$sCont.removeClass("active");
-		$chat.removeClass("active");
+		$detail.removeClass("active");
 		$(".cloned").addClass("removed");
 		finalX = -75;
 		setTimeout(function () {
 			animatePathD($path, midD, animTime / 3, false, function () {
-				$chat.hide();
+				$detail.hide();
 				$(".cloned").remove();
 				finalX = 0;
 				curX = -75;
@@ -186,8 +186,8 @@ $(document).ready(function () {
 		$(document).off("click", closeSidebar);
 		var that = this,
 			name = $(this).find(".item__name").text();
-		$(".chat__name").text(name);
-		$(".chat__online").removeClass("active");
+		$(".detail__name").text(name);
+		$(".detail__online").removeClass("active");
 		ripple($(that), e);
 		setTimeout(function () {
 			$sCont.removeClass("active");
@@ -199,9 +199,9 @@ $(document).ready(function () {
 					curX = -80;
 					finalX = 0;
 					animatePathD($path, clickD, animTime * 2 / 3, true, function () {
-						$chat.show();
-						$chat.css("top");
-						$chat.addClass("active");
+						$detail.show();
+						$detail.css("top");
+						$detail.addClass("active");
 						animating = false;
 					});
 				}, "inCubic");
@@ -209,14 +209,14 @@ $(document).ready(function () {
 		}, sContTrans);
 	});
 
-	$(document).on("click", ".chat__back", function () {
+	$(document).on("click", ".detail__back", function () {
 		if (animating) return;
 		animating = true;
-		$chat.removeClass("active");
+		$detail.removeClass("active");
 		$(".cloned").addClass("removed");
 		setTimeout(function () {
 			$(".cloned").remove();
-			$chat.hide();
+			$detail.hide();
 			finalX = 100;
 			animatePathD($path, clickMidDRev, animTime / 3, false, function () {
 				curX = 100;
