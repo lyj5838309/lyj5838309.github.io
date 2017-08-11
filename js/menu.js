@@ -17,9 +17,9 @@ $(document).ready(function () {
 		diffX = 0,
 		curX = 0,
 		finalX = 0,
-		frame = 1000 / 60,
-		animTime = 600,
-		sContTrans = 200,
+		frame = 500 / 120,
+		animTime = 150,
+		sContTrans = 100,
 		animating = false;
 
 	var easings = {
