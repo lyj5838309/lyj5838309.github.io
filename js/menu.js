@@ -10,7 +10,7 @@ $(document).ready(function () {
 		$path = $(".s-path"),
 		$sCont = $(".sidebar-content"),
 		$detail = $(".detail"),
-		menuTop = $sideMenu.offset().top,
+		menuTop = 0,
 		menuLeft = $sideMenu.offset().left,
 		menuWidth = convertRemToPixels(13.5),
 		windowWidth = $canvas.width(),
@@ -152,7 +152,7 @@ $(document).ready(function () {
 	function moveImage(that) {
 		var $img = $(that).find(".item__logo"),
 			top = $img.offset().top - menuTop,
-			left = $img.offset().left - menuLeft,
+			left = $img.marginLeft + menuLeft,
 			$clone = $img.clone().addClass("cloned");
 
 		$clone.css({
@@ -163,7 +163,7 @@ $(document).ready(function () {
 		$clone.css("top");
 		$clone.css({
 			top: "1.8rem",
-			right: "2rem"
+			left: "75%"
 		});
 	}
 

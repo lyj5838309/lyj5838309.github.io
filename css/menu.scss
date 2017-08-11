@@ -83,6 +83,7 @@ button, input {
   }
   &item__logo {
 	position: absolute;
+	left: 10px;
   }
 }
 .search {
@@ -146,7 +147,7 @@ button, input {
     left: 0;
     width: 100%;
     height: 0.5rem;
-    background: #1CC6AE;
+    background: rgb(240,6,166);
     width: 0;
     transition: width 0.2s;
   }
