@@ -67,7 +67,7 @@ button, input {
   position: relative;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 10rem;
   border: 1px solid thick;
   color: beige;
   display: flex;
@@ -78,7 +78,7 @@ button, input {
   &item__name {
 	position: relative;
 	left: 0;
-	font-size: 10px;
+	font-size: 2rem;
     font-family: $openSans;
   }
   &item__logo {
@@ -131,6 +131,7 @@ button, input {
   padding: 2.5rem 0 5.5rem 2.5rem;
   transition: opacity $transTime;
   opacity: 0;
+  margin: 0 auto;
   
   &.active {
     opacity: 1;
@@ -183,20 +184,26 @@ button, input {
   &__title {
     display: inline-block;
     position: absolute;
-    top: 3rem;
-    right: 6.5rem;
+    top: 2.6rem;
+    left: 20%;
     font-size: 2rem;
     font-family: $openSans;
-    color: #36343D;
+    color: rebeccapurple;
   }
   &__content {
     position: absolute;
     top: 7.5rem;
-    left: 2.5rem;
-    width: 27.5rem;
-    height: 37rem;
+	left: auto;
+    width: 90%;
+    height: 100%;
     padding-right: 2.5rem;
     overflow-y: auto;
+	margin: 0 auto;
+	
+	.map-content {
+		width: 100%;
+		height: 80%;
+	}
   }
   &__input {
     position: absolute;

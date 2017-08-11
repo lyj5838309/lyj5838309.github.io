@@ -56,7 +56,7 @@ button, input {
   position: relative;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 10rem;
   border: 1px solid thick;
   color: beige;
   display: flex;
@@ -66,7 +66,7 @@ button, input {
   .sidebar-itemitem__name {
     position: relative;
     left: 0;
-    font-size: 10px;
+    font-size: 2rem;
     font-family: Helvetica, Arial, sans-serif; }
   .sidebar-itemitem__logo {
     position: absolute;
@@ -114,7 +114,8 @@ button, input {
   height: 100%;
   padding: 2.5rem 0 5.5rem 2.5rem;
   transition: opacity 200ms;
-  opacity: 0; }
+  opacity: 0;
+  margin: 0 auto; }
   .detail.active {
     opacity: 1; }
     .detail.active:before {
@@ -155,19 +156,23 @@ button, input {
   .detail__title {
     display: inline-block;
     position: absolute;
-    top: 3rem;
-    right: 6.5rem;
+    top: 2.6rem;
+    left: 20%;
     font-size: 2rem;
     font-family: Helvetica, Arial, sans-serif;
-    color: #36343D; }
+    color: rebeccapurple; }
   .detail__content {
     position: absolute;
     top: 7.5rem;
-    left: 2.5rem;
-    width: 27.5rem;
-    height: 37rem;
+    left: auto;
+    width: 90%;
+    height: 100%;
     padding-right: 2.5rem;
-    overflow-y: auto; }
+    overflow-y: auto;
+    margin: 0 auto; }
+    .detail__content .map-content {
+      width: 100%;
+      height: 80%; }
   .detail__input {
     position: absolute;
     bottom: 0;

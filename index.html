@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="css/coin.css" />
 <link rel="stylesheet" type="text/css" href="css/menu.css" />
 <link rel="stylesheet" type="text/css" href="css/thank.css" />
+<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
 <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
@@ -76,13 +77,20 @@
 					</div>
 				</div>
 				<ul class="sidebar-content">
-					<li class="sidebar-item"><img src="svg/map.svg" class="item__logo" height="64" /><span class="item__name">详细地址</span> </li>
-					<li class="sidebar-item"><img src="svg/schedule.svg" class="item__logo" height="64" /><span class="item__name">具体日程</span> </li>
+					<li class="sidebar-item" id="map"><img src="svg/map.svg" class="item__logo" height="64" /><span class="item__name">详细地址</span> </li>
+					<li class="sidebar-item" id="schedule"><img src="svg/schedule.svg" class="item__logo" height="64" /><span class="item__name">具体日程</span> </li>
+					<li class="sidebar-item" id="register"><img src="svg/schedule.svg" class="item__logo" height="64" /><span class="item__name">人数登记</span> </li>
 				</ul>
 				<div class="detail"> <span class="detail__back"></span>
 					<div class="detail__title"> <span class="detail__name">Dummy</span> </div>
-					<div class="detail__content"> </div>
-					<input type="text" class="detail__input" placeholder="Your message" />
+					<div class="detail__content" id="detail_map">
+						<iframe src="map.html" class="map-content" frameborder="0" scrolling="no">
+							<p>您的浏览器不支持iframe，请更换更高版本的浏览器.</p>
+						</iframe>
+					</div>
+					<div class="detail__content" id="detail_schedule"> </div>
+					<div class="detail__content" id="detail_register"> </div>
+					<!--input type="text" class="detail__input" placeholder="Your message" /-->
 				</div>
 			</div>
 		</div>

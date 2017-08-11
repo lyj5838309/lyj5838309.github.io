@@ -152,7 +152,7 @@ $(document).ready(function () {
 	function moveImage(that) {
 		var $img = $(that).find(".item__logo"),
 			top = $img.offset().top - menuTop,
-			left = $img.marginLeft + menuLeft,
+			left = 10 - menuLeft,
 			$clone = $img.clone().addClass("cloned");
 
 		$clone.css({
@@ -162,8 +162,8 @@ $(document).ready(function () {
 		$sideMenu.append($clone);
 		$clone.css("top");
 		$clone.css({
-			top: "1.8rem",
-			left: "75%"
+			top: "1.7rem",
+			left: "78%",
 		});
 	}
 

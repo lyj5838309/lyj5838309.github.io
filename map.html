@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<title>详细地图</title>
+<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=48e28963a744b1de6cefab1a1dcfb60b"></script>
+<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+	var map = new AMap.Map('container', {
+         	mapStyle: "amap://styles/fresh",
+			zoom: 13,
+			center: [112.928731, 27.880516]
+     	});
+	map.plugin(["AMap.ToolBar"], function() {
+    	map.addControl(new AMap.ToolBar());
+		});
+	var icon = new AMap.Icon({
+				image: 'https://vdata.amap.com/icons/b18/1/2.png',
+    			size: new AMap.Size(24, 24)
+    	});
+	var marker1 = new AMap.Marker({
+        position: [112.927031,27.870021],
+        offset: new AMap.Pixel(-9,-30),
+        map: map,
+		title: "酒店地址"
+	});
+	var marker2 = new AMap.Marker({
+        position: [112.918156,27.894191],
+        offset: new AMap.Pixel(-10,-30),
+        map: map,
+		title: "我们的家"
+	});
+</script>
+</body>
+</html>
