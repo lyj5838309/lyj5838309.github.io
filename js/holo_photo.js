@@ -141,4 +141,3 @@ function initTilt() {
 
 initTilt();
 
-console.clear();
