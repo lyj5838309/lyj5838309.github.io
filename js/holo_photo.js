@@ -12,13 +12,7 @@ var $body = $("body"),
 	$layer3 = $(".layer_3"),
 	$layer4 = $(".layer_4"),
 	$layer5 = $(".layer_5"),
-	$layer6 = $(".layer_6"),
-	$layer7 = $(".layer_7"),
-	$layer8 = $(".layer_8"),
-	$layer9 = $(".layer_9"),
-	$layer10 = $(".layer_10"),
-	$layer11 = $(".layer_11"),
-	$layer12 = $(".layer_12");
+	$layer6 = $(".layer_6");
 
 function handleOrientation(event) {
 	TweenMax.set([$pContent, $layer1], {
@@ -41,80 +35,38 @@ function holo_tilt(sxPos, syPos) {
 		rotationY: 0.03 * sxPos,
 		rotationX: -0.03 * syPos,
 		transformPerspective: 500,
-		transformOrigin: "center center 1200",
+		transformOrigin: "center center 800",
 		ease: Expo.easeOut
 	});
 	TweenMax.to($layer2, 2, {
 		rotationY: 0.03 * sxPos,
 		rotationX: -0.03 * syPos,
 		transformPerspective: 500,
-		transformOrigin: "center center 1000",
+		transformOrigin: "center center 400",
 		ease: Expo.easeOut
 	});
 	TweenMax.to($layer3, 2, {
 		rotationY: 0.03 * sxPos,
 		rotationX: -0.03 * syPos,
 		transformPerspective: 500,
-		transformOrigin: "center center 800",
+		transformOrigin: "center center 0",
 		ease: Expo.easeOut
 	});
 	TweenMax.to($layer4, 2, {
 		rotationY: 0.03 * sxPos,
 		rotationX: -0.03 * syPos,
 		transformPerspective: 500,
-		transformOrigin: "center center 600",
+		transformOrigin: "center center -400",
 		ease: Expo.easeOut
 	});
 	TweenMax.to($layer5, 2, {
 		rotationY: 0.03 * sxPos,
 		rotationX: -0.03 * syPos,
 		transformPerspective: 500,
-		transformOrigin: "center center 400",
-		ease: Expo.easeOut
-	});
-	TweenMax.to($layer6, 2, {
-		rotationY: 0.03 * sxPos,
-		rotationX: -0.03 * syPos,
-		transformPerspective: 500,
-		transformOrigin: "center center 200",
-		ease: Expo.easeOut
-	});
-	TweenMax.to($layer7, 2, {
-		rotationY: 0.03 * sxPos,
-		rotationX: -0.03 * syPos,
-		transformPerspective: 500,
-		transformOrigin: "center center 0",
-		ease: Expo.easeOut
-	});
-	TweenMax.to($layer8, 2, {
-		rotationY: 0.03 * sxPos,
-		rotationX: -0.03 * syPos,
-		transformPerspective: 500,
-		transformOrigin: "center center -200",
-		ease: Expo.easeOut
-	});
-	TweenMax.to($layer9, 2, {
-		rotationY: 0.03 * sxPos,
-		rotationX: -0.03 * syPos,
-		transformPerspective: 500,
-		transformOrigin: "center center -400",
-		ease: Expo.easeOut
-	});
-	TweenMax.to($layer10, 2, {
-		rotationY: 0.03 * sxPos,
-		rotationX: -0.03 * syPos,
-		transformPerspective: 500,
 		transformOrigin: "center center -800",
 		ease: Expo.easeOut
 	});
-	TweenMax.to($layer11, 2, {
-		rotationY: 0.03 * sxPos,
-		rotationX: -0.03 * syPos,
-		transformPerspective: 500,
-		transformOrigin: "center center -1000",
-		ease: Expo.easeOut
-	});
-	TweenMax.to($layer12, 2, {
+	TweenMax.to($layer6, 2, {
 		rotationY: 0.03 * sxPos,
 		rotationX: -0.03 * syPos,
 		transformPerspective: 500,

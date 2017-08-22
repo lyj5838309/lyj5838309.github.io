@@ -120,6 +120,10 @@ button, input {
     opacity: 1; }
     .detail.active:before {
       width: 100%; }
+  .detail .active {
+    display: block; }
+  .detail .hide {
+    display: none; }
   .detail:before {
     content: "";
     position: absolute;

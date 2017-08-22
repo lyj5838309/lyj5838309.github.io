@@ -140,6 +140,13 @@ button, input {
       width: 100%;
     }
   }
+
+  .active {
+	display: block;
+  }
+  .hide {
+	display: none;
+  }
   
   &:before {
     content: "";
