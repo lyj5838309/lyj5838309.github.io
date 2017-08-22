@@ -45,7 +45,7 @@ $(document).ready(function () {
 		actived_nav.removeClass('active');
 		
 		// hide activated content
-		var actived_content = $('.detail__content .active');
+		var actived_content = $(actived_nav).attr('href');
 		$(actived_content).removeClass('active');
 		$(actived_content).addClass('hide');
 
