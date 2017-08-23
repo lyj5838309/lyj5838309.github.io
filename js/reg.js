@@ -27,4 +27,4 @@ function my_send_mail() {
 $(".reg_dec").on('click', dec_reg_num);
 $(".reg_add").on('click', add_reg_num);
 
-$(".image").on('click', my_send_mail);
+$(".animated-mail").on('click', my_send_mail);
