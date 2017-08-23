@@ -26,6 +26,16 @@ button, input {
 	font-size: 8rem;
 	font-weight: 900;
 }
+.register .reg_add {
+	font-size: 4rem;
+	text-align: right;
+	color: rgba(240,6,166,.8);
+}
+.register .reg_dec {
+	font-size: 4rem;
+	text-align: left;
+	color: rgba(240,6,166,.8);
+}
 .taitou {
 	right: 50%;
 	font-family: 微软雅黑;
