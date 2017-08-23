@@ -3,9 +3,9 @@ button, input {
 	outline: none;
 }
 .taitou {
-	right: 20%;
+	right: 50%;
 	font-family: 微软雅黑;
-	text-align: left;
+	text-align: right;
 	font-size: 1.1rem;
 }
 .luokuan {
