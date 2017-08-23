@@ -3,29 +3,19 @@ button, input {
 	outline: none;
 }
 .taitou {
+	right: 20%;
 	font-family: 微软雅黑;
 	text-align: left;
 	font-size: 1.1rem;
 }
 .luokuan {
 	font-family: 微软雅黑;
+	right: 10%;
 	text-align: right;
 	font-size: 1.1rem;
 }
-.neirong {
-	font-family: 微软雅黑;
-	text-align: left;
-}
-.bridebroom {
-	text-align: center;
-	font-size: 1.1rem;
-}
-.n_title {
-	font: bold;
-	font-family: 宋体;
-}
-.b_name {
-	font-family: 幼圆;
+.static_img {
+	right: 10%;
 }
 .slide-menu {
 	position: absolute;
@@ -52,11 +42,11 @@ button, input {
 	top: 35rem;
 }
 .static__text {
-	max-width: 65%;
+	width: 100%;
+	right: 5%;
 	font-size: 1rem;
 	position: absolute;
 	top: 50%;
-	right: 12%;
 	margin-left: -5rem;
 	transform: translate3d(0, -50%, 0);
 	color: #fff;
