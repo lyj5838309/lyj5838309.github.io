@@ -14,17 +14,20 @@ function dec_reg_num() {
 }
 
 function my_send_mail() {
-	var msg = "邀请人：" + inviter_str + "\n";
-	msg += num_reg.toString;
+	var msg = "邀请人：\t" + inviter_str + "\r\n" + "人数：\t" + num_reg;
 	Email.send("hal9k1@126.com",
 		"hal9k1@126.com",
 		invitee_name_str,
-		msg, {
-			token: "1b6838a0-dd81-4e74-9e2a-8b2a79c58fbe"
-		});
+		msg,
+		{token: "501b3bdb-1055-4d06-95ff-99b45f8572b8"}
+	);
 }
 
 $(".reg_dec").on('click', dec_reg_num);
 $(".reg_add").on('click', add_reg_num);
-
-$(".animated-mail").on('click', my_send_mail);
+var timeout_id = 0;
+$('.image').on('mousedown touchstart', function () {
+	timeout_id = setTimeout(my_send_mail, 1000);
+}).bind('mouseup mouseleave touchend', function () {
+	clearTimeout(timeout_id);
+});
