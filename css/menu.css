@@ -2,6 +2,30 @@ button, input {
 	border: 0;
 	outline: none;
 }
+.register_title {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0%;
+	text-align: center;
+}
+.register_title .invitee_name {
+	font-family: 微软雅黑;
+	font-size: 1.5rem;
+}
+.register {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 0px auto;
+	font-size: 1.5rem;
+}
+.register .num_reg {
+	font-size: 8rem;
+	font-weight: 900;
+}
 .taitou {
 	right: 50%;
 	font-family: 微软雅黑;

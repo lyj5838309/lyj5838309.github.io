@@ -24,7 +24,9 @@ inviter_str += urlParams.inviter;
 if (invitee_name_str !== "NaN") {
 	$(".invitee").text(invitee_str);
 	$(".inviter").text(inviter_str);
+	$(".invitee_name").text(invitee_name_str);
 } else {
 	$(".taitou").text("");
 	$(".luokuan").text("戴望州 刘雅静 敬邀");
+	$(".invitee_name").text("");
 }
