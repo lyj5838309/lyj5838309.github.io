@@ -14,10 +14,11 @@ function dec_reg_num() {
 }
 
 function my_send_mail() {
-	var msg = "邀请人：\t" + inviter_str + "\r\n" + "人数：\t" + num_reg;
+	var subj = "被邀请人：" + invitee_str;
+	var msg = "邀请人：\t" + inviter_str + " ****** " + "人数：\t" + num_reg;
 	Email.send("hal9k1@126.com",
 		"hal9k1@126.com",
-		invitee_name_str,
+		subj,
 		msg,
 		{token: "501b3bdb-1055-4d06-95ff-99b45f8572b8"}
 	);
