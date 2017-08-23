@@ -14,14 +14,17 @@ var urlParams;
 		urlParams[decode(match[1])] = decode(match[2]);
 })();
 
-var invitee_str = urlParams.title + urlParams.name + urlParams.subtitle + urlParams.other;
-var invitee_name_str = urlParams.name + urlParams.subtitle + urlParams.other;
-var inviter_str = urlParams.inviter;
+var invitee_str = "";
+var invitee_name_str = "";
+var inviter_str = "";
+invitee_str += urlParams.title + urlParams.name + urlParams.subtitle + urlParams.other;
+invitee_name_str += urlParams.name + urlParams.subtitle + urlParams.other;
+inviter_str += urlParams.inviter;
 
-if (isNaN(invitee_str)) {
-	$(".taitou").text("");
-	$(".luokuan").text("戴望州 刘雅静 敬邀");
-} else {
+if (invitee_name_str !== "NaN") {
 	$(".invitee").text(invitee_str);
 	$(".inviter").text(inviter_str);
+} else {
+	$(".taitou").text("");
+	$(".luokuan").text("戴望州 刘雅静 敬邀");
 }
