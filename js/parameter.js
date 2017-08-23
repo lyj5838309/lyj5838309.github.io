@@ -18,9 +18,6 @@ var invitee_str = urlParams.title + urlParams.name + urlParams.subtitle + urlPar
 var invitee_name_str = urlParams.name + urlParams.subtitle + urlParams.other;
 var inviter_str = urlParams.inviter;
 
-console.log(invitee_name_str);
-console.log(invitee_str);
-console.log(inviter_str);
 
-$(".invitee").text(invitee_name_str);
+$(".invitee").text(invitee_str);
 $(".inviter").text(inviter_str);
