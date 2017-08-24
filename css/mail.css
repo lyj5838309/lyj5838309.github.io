@@ -8,6 +8,13 @@
 	-moz-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	cursor: pointer;
+	
+}
+.image .pushme {
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	text-align: center;
 }
 .animated-mail {
 	position: absolute;

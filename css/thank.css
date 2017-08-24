@@ -1,5 +1,5 @@
 .thanks {
-	width: 100vw;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	display: block;
@@ -48,7 +48,7 @@
 }
 #play {
 	font-size: 10px;
-	color: #fff;
+	color: rebeccapurple;
 	display: block;
 	position: 'relative';
 	margin: 0 auto;

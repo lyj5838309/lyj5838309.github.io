@@ -1,5 +1,5 @@
 // JavaScript Document
-document.body.onload = function () {
+function my_thank_you() {
 	// SELECTING...
 	// T
 	var t1 = document.getElementById('t1');
