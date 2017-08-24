@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>婚礼邀请函链接生成器</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/link_maker.css" />
+</head>
+
+<body>
+以下项目可以选择性不填，例如邀请“张三、李四夫妇”不填其他称谓，只需要填写“姓名”（张三 李四）和“其他”（伉俪）字段。下面的输入框中显示了一个基本例子，如果不填写该框，不需要删除其中内容。
+填写完后，点击进入生成的页面，查看无误后点击微信右上角或直接复制链接地址进行分享。
+<form action="/index.html" method="get">
+	<h3>被邀请人</h3>
+	称谓1（工作上的职务，例如：校长、局长，或亲戚称谓：例如：伯伯、姨妈）：<br>
+	<input type="text" name="title" placeholder="姐夫">
+	<br>
+	姓名（名字）：<br>
+	<input type="text" name="name" placeholder="张三">
+	<br>
+	称谓2（一般称呼，例如：先生、小姐；或职位称呼，例如：教授、老师）：<br>
+	<input type="text" name="subtitle" placeholder="教授">
+	<br>
+	其他（其他项目，例如：全家、伉俪）：<br>
+	<input type="text" name="other" placeholder="全家">
+	<br>
+	<h3>邀请人</h3>
+	邀请人姓名（若为多人，可用空格间隔）：<br>
+	<input type="text" name="inviter" placeholder="李四 王五">
+	<br>
+	<input class="mygen" type="submit" value="生成邀请函链接">
+</form>
+<br>
+<div class="mylink hide">点击下面链接以进入邀请函页面直接分享，或直接长按链接复制地址进行分享<br>
+	<a class="gen_link" href="dummy">dummy</a> </div>
+<!--script type="application/javascript" src="js/link_maker.js"></script-->
+</body>
+</html>

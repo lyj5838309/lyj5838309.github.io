@@ -1,0 +1,8 @@
+/* CSS Document */
+.hide {
+	display: none;
+}
+
+.active {
+	display: block;
+}
