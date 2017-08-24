@@ -2,6 +2,13 @@ button, input {
 	border: 0;
 	outline: none;
 }
+.schedule_con {
+	position: absolute;
+	width: 70%;
+	top: 20%;
+	left: 20%;
+	align-content: center;
+}
 .back_intro {
 	position: absolute;
 	left: 20%;
@@ -61,13 +68,13 @@ button, input {
 	right: 50%;
 	font-family: 微软雅黑;
 	text-align: right;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 }
 .luokuan {
 	font-family: 微软雅黑;
 	right: 10%;
 	text-align: right;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 }
 .static_img {
 	right: 10%;
@@ -99,7 +106,7 @@ button, input {
 .static__text {
 	width: 100%;
 	right: 5%;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	position: absolute;
 	top: 50%;
 	margin-left: -5rem;

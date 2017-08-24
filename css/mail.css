@@ -15,6 +15,9 @@
 	width: 100%;
 	bottom: 0%;
 	text-align: center;
+	color: rebeccapurple;
+	opacity: 0.8;
+	z-index: 0;
 }
 .animated-mail {
 	position: absolute;
