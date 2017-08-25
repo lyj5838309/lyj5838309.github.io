@@ -27,12 +27,12 @@ var doc    = window.document,
     DUMMY = false,
     NAV = navigator.userAgent.toLowerCase(),
     HASH = window.location.hash.replace(/#\//, ''),
-    PROT = window.location.protocol == "file:" ? "http:" : window.location.protocol,
+    PROT = window.location.protocol === "file:" ? "http:" : window.location.protocol,
     M = Math,
     F = function(){},
     FALSE = function() { return false; },
     MOBILE = !(
-        ( window.screen.width > 1279 && window.devicePixelRatio == 1 ) || // there are not so many mobile devices with more than 1280px and pixelRatio equal to 1 (i.e. retina displays are equal to 2...)
+        ( window.screen.width > 1279 && window.devicePixelRatio === 1 ) || // there are not so many mobile devices with more than 1280px and pixelRatio equal to 1 (i.e. retina displays are equal to 2...)
         ( window.screen.width > 1000 && window.innerWidth < (window.screen.width * .9) ) // this checks in the end if a user is using a resized browser window which is not common on mobile devices
     ),
     IE = (function() {
@@ -705,10 +705,10 @@ var doc    = window.document,
                 Galleria._waiters = Galleria._waiters || [];
 
                 options = $.extend({
-                    until : FALSE,
+                    until : false,
                     success : F,
                     error : function() { Galleria.raise('Could not complete wait function.'); },
-                    timeout: 18000
+                    timeout: 36000
                 }, options);
 
                 var start = Utils.timestamp(),
@@ -727,9 +727,9 @@ var doc    = window.document,
                             options.error();
                             return false;
                         }
-                        Galleria._waiters.push( tid = window.setTimeout(fn, 10000) );
+                        Galleria._waiters.push( tid = window.setTimeout(fn, 10) );
                     };
-                Galleria._waiters.push( tid = window.setTimeout(fn, 10000) );
+                Galleria._waiters.push( tid = window.setTimeout(fn, 10) );
             },
 
             toggleQuality : function( img, force ) {
