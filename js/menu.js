@@ -18,7 +18,7 @@ $(document).ready(function () {
 		curX = 0,
 		finalX = 0,
 		frame = 1000 / 120,
-		animTime = 100,
+		animTime = 200,
 		sContTrans = 100,
 		animating = false;
 
