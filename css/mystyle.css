@@ -58,22 +58,6 @@ svg {
 .bg3 {
 	animation-duration: 5s;
 }
-.img_container {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-.mycenter {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 @keyframes slide {
  0% {
  transform:translateX(-25%);
