@@ -10,5 +10,5 @@ $(document).ready(function () {
 		shortSwipes: false,
 		longSwipesMs: 0.1,
 		longSwipesRatio: 0.25
-	})
+	});
 });

@@ -6,7 +6,7 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <meta charset="utf-8">
-<title>戴望州与刘雅静的婚礼邀请函</title>
+<title>望州与雅静的婚礼邀请函</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script type="application/javascript" src="js/preloader.js"></script>
@@ -27,6 +27,7 @@
 <script src="https://webapi.amap.com/maps?v=1.3&key=8c98b7401adc25b043a576905df98a75"></script>
 <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
 <meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="description" content="我们结婚啦！欢迎您在10月5日光临我们的婚礼现场。" />
 </head>
 
 <body>
@@ -208,8 +209,19 @@
 							<button id="play">再谢谢一次</button>
 						</div>
 					</div>
-					<div class="detail__content hide" id="detail_photos">
-						<h1>Photos</h1>
+					<div class="detail__content hide" id="detail_photos"> 
+						<!--START JUICEBOX EMBED--> 
+						<script src="jbcore/juicebox.js"></script> 
+						<script>
+							new juicebox({
+							containerId: "juicebox-container",
+							galleryWidth: "100%",
+							galleryHeight: "100%",
+							backgroundColor: "rgba(255,255,0,1)"
+							});
+						</script>
+						<div class="album" id="juicebox-container"></div>
+						<!--END JUICEBOX EMBED--> 
 					</div>
 					<div class="back_intro">(请点击左方&lt;返回)</div>
 				</div>
