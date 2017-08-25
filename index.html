@@ -9,6 +9,7 @@
 <title>望州与雅静的婚礼邀请函</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 <script type="application/javascript" src="js/preloader.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 <script src="https://smtpjs.com/smtp.js"></script>
@@ -66,7 +67,7 @@
 					<li class="sidebar-item active" id="map" href="#detail_map"><img src="svg/map.svg" class="item__logo" height="64" /><span class="item__name">详细地图</span> </li>
 					<li class="sidebar-item" id="schedule" href="#detail_schedule"><img src="svg/schedule.svg" class="item__logo" height="64" /><span class="item__name">日程安排</span> </li>
 					<li class="sidebar-item" id="register" href="#detail_register"><img src="svg/pencil.svg" class="item__logo" height="64" /><span class="item__name">赴宴登记</span> </li>
-					<li class="sidebar-item" id="photos" href="#detail_photos"><img src="svg/pencil.svg" class="item__logo" height="64" /><span class="item__name">婚纱相册</span> </li>
+					<li class="sidebar-item" id="photos" href="#detail_photos"><img src="svg/gallery.svg" class="item__logo" height="64" /><span class="item__name">婚纱相册</span> </li>
 				</ul>
 				<div class="detail"> <span class="detail__back"> </span>
 					<div class="detail__title"> <span class="detail__name">Dummy</span> </div>
@@ -208,8 +209,10 @@
 							<button id="play">再谢谢一次</button>
 						</div>
 					</div>
-					<div class="detail__content hide" id="detail_photos"> 
-						
+					<div class="detail__content hide" id="detail_photos">
+						<div class="galleria-container">
+							<div class="galleria"> <img src="img/1.jpg"> <img src="img/2.jpg"> <img src="img/3.jpg"> <img src="img/4.jpg"> <img src="img/5.jpg"> <img src="img/6.jpg"> <img src="img/7.jpg"> <img src="img/8.jpg"> <img src="img/9.jpg"> <img src="img/10.jpg"> <img src="img/11.jpg"> <img src="img/12.jpg"> <img src="img/13.jpg"> <img src="img/14.jpg"> <img src="img/15.jpg"> <img src="img/16.jpg"></div>
+						</div>
 					</div>
 					<div class="back_intro">(请点击左方&lt;返回)</div>
 				</div>
@@ -222,6 +225,18 @@
 <script type="application/javascript" src="js/reg.js"></script> 
 <script type="application/javascript" src="js/slides.js"></script> 
 <script type="application/javascript" src="js/holo_photo.js"></script> 
-<script type="application/javascript" src="js/menu.js"></script>
+<script type="application/javascript" src="js/menu.js"></script> 
+<script>
+(function() { 
+    Galleria.loadTheme('js/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+	Galleria.configure({
+		autoplay: true,
+    	imageCrop: false,
+    	transition: "pulse",
+		thumbCrop: true
+	});
+}());
+</script>
 </body>
 </html>
