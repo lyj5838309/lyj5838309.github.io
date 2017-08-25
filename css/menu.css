@@ -269,13 +269,13 @@ button, input {
 	top: 7.0rem;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: calc(100% - 3rem);
 	overflow-y: auto;
 	margin: 0 auto;
 }
 .detail__content .map-content {
 	width: 100%;
-	height: 100%;
+	height: 90%;
 }
 .detail__input {
 	position: absolute;
