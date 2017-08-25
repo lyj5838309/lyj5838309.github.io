@@ -727,9 +727,9 @@ var doc    = window.document,
                             options.error();
                             return false;
                         }
-                        Galleria._waiters.push( tid = window.setTimeout(fn, 10) );
+                        Galleria._waiters.push( tid = window.setTimeout(fn, 10000) );
                     };
-                Galleria._waiters.push( tid = window.setTimeout(fn, 10) );
+                Galleria._waiters.push( tid = window.setTimeout(fn, 10000) );
             },
 
             toggleQuality : function( img, force ) {
