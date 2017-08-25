@@ -708,7 +708,7 @@ var doc    = window.document,
                     until : FALSE,
                     success : F,
                     error : function() { Galleria.raise('Could not complete wait function.'); },
-                    timeout: 3000
+                    timeout: 18000
                 }, options);
 
                 var start = Utils.timestamp(),
