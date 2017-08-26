@@ -4,10 +4,6 @@
 	bottom: 1%;
 	margin: 0px auto;
 }
-.pullme {
-	bottom: 0%;
-	left: 20%;
-}
 .glitch {
 	animation: glitch-skew 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite;
 	font-family: 微软雅黑;
@@ -17,6 +13,11 @@
 	position: absolute;
 	text-align: center;
 	transform-origin: center top;
+}
+.pullme {
+	bottom: 1%;
+	left: 20%;
+	font-size: 1.1rem;
 }
 .glitch__main {
 	color: #FFF;
