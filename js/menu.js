@@ -43,7 +43,7 @@ $(document).ready(function () {
 		//find actived navigation and remove 'active' css
 		var actived_nav = $('.sidebar-content > li.active');
 		actived_nav.removeClass('active');
-		
+
 		// hide activated content
 		var actived_content = $(actived_nav).attr('href');
 		$(actived_content).removeClass('active');
@@ -121,6 +121,15 @@ $(document).ready(function () {
 	}
 
 	function handlers1() {
+		$(".pullme").on("click", function () {
+			animatePathD($path, finalD, animTime, false, function () {
+				$sCont.addClass("active");
+				setTimeout(function () {
+					$(document).on("click", closeSidebar);
+				}, sContTrans);
+			});
+			$(".pullme").hide();
+		});
 
 		$(document).on("mousedown touchstart", ".s-path", function (e) {
 			var startX = e.pageX || e.originalEvent.touches[0].pageX;
@@ -148,6 +157,7 @@ $(document).ready(function () {
 						$(document).on("click", closeSidebar);
 					}, sContTrans);
 				});
+				$(".pullme").hide();
 			}
 		});
 
@@ -175,6 +185,7 @@ $(document).ready(function () {
 			}, "inCubic");
 		}, sContTrans);
 		$(document).off("click", closeSidebar);
+		$(".pullme").show();
 	}
 
 	function moveImage(that) {

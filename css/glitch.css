@@ -9,21 +9,15 @@
 	font-family: 微软雅黑;
 	font-size: 1.5rem;
 	font-weight: 900;
-	line-height: 1;
 	position: absolute;
+	line-height: 1;
 	text-align: center;
 	transform-origin: center top;
-}
-.pullme {
-	bottom: 1%;
-	left: 20%;
-	font-size: 1.1rem;
 }
 .glitch__main {
 	color: #FFF;
 }
 .glitch__color {
-	height: 100%;
 	left: 0;
 	opacity: 0.8;
 	position: absolute;
@@ -609,4 +603,14 @@
 	top: 88%;
 	left: 83%;
 	box-shadow: 0 0 4px 2px #FFF;
+}
+.pullme {
+	position: absolute;
+	height: 3rem;
+	min-width: 3.5rem;
+	max-width: 40px;
+	left: 5px;
+	margin: auto;
+	font-size: 2rem;
+	z-index: 10;
 }
